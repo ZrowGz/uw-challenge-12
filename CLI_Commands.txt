@@ -1,0 +1,97 @@
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git init
+Initialized empty Git repository in /Users/zrowgz/Desktop/fintech-workspace/w12/uw-challenge-12/.git/
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % ls
+Resources			credit_risk_resampling.ipynb	report-template.md
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git pull git@github.com:ZrowGz/uw-challenge-12.git
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.57 KiB | 402.00 KiB/s, done.
+From github.com:ZrowGz/uw-challenge-12
+ * branch            HEAD       -> FETCH_HEAD
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Resources/
+	credit_risk_resampling.ipynb
+	report-template.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git add .
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git commit -m "Completion of code and analysis"
+[main bf55b5e] Completion of code and analysis
+ 3 files changed, 78445 insertions(+)
+ create mode 100644 Resources/lending_data.csv
+ create mode 100644 credit_risk_resampling.ipynb
+ create mode 100644 report-template.md
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git remote add uw-challenge-12 git@github.com:ZrowGz/uw-challenge-12.git
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git push uw-challenge-12
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream uw-challenge-12 main
+
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git push --set-upstream uw-challenge-12 main
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 532.73 KiB | 3.60 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:ZrowGz/uw-challenge-12.git
+   b39f4f1..bf55b5e  main -> main
+Branch 'main' set up to track remote branch 'main' from 'uw-challenge-12'.
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git status
+On branch main
+Your branch is up to date with 'uw-challenge-12/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git add .
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git commit -m "update readme" 
+[main 152b92f] update readme
+ 3 files changed, 32 insertions(+), 1 deletion(-)
+ create mode 100644 .DS_Store
+ rename report-template.md => Analysis_Report.md (100%)
+ rewrite README.md (100%)
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % git push
+Enter passphrase for key '/Users/zrowgz/.ssh/id_rsa': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1024 bytes | 1024.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:ZrowGz/uw-challenge-12.git
+   bf55b5e..152b92f  main -> main
+(py38) zrowgz@x86_64-apple-darwin13 uw-challenge-12 % touch CLI_Commands.txt
+
